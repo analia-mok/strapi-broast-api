@@ -1,0 +1,6 @@
+name: strapi-broast-api
+recipe: lamp
+config:
+  webroot: .
+  # Heroku's PostgresSQL Addon defaults to version 12.
+  database: postgres:12
