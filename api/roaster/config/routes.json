@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/roasters",
+      "handler": "roaster.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/roasters/count",
+      "handler": "roaster.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/roasters/:id",
+      "handler": "roaster.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/roasters",
+      "handler": "roaster.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/roasters/:id",
+      "handler": "roaster.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/roasters/:id",
+      "handler": "roaster.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "roasters",
+  "info": {
+    "name": "roaster"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "short_bio": {
+      "type": "richtext"
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

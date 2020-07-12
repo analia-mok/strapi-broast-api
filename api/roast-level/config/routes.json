@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/roast-levels",
+      "handler": "roast-level.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/roast-levels/count",
+      "handler": "roast-level.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/roast-levels/:id",
+      "handler": "roast-level.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/roast-levels",
+      "handler": "roast-level.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/roast-levels/:id",
+      "handler": "roast-level.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/roast-levels/:id",
+      "handler": "roast-level.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

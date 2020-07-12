@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/flavor-profiles",
+      "handler": "flavor-profile.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/flavor-profiles/count",
+      "handler": "flavor-profile.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/flavor-profiles/:id",
+      "handler": "flavor-profile.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/flavor-profiles",
+      "handler": "flavor-profile.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/flavor-profiles/:id",
+      "handler": "flavor-profile.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/flavor-profiles/:id",
+      "handler": "flavor-profile.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
