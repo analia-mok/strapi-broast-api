@@ -15,6 +15,10 @@
     },
     "brief_description": {
       "type": "text"
+    },
+    "coffees": {
+      "collection": "coffee",
+      "via": "flavor_profile"
     }
   }
 }

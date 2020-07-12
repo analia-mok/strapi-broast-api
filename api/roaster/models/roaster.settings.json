@@ -28,6 +28,10 @@
     "location": {
       "type": "string",
       "required": true
+    },
+    "coffees": {
+      "collection": "coffee",
+      "via": "roaster"
     }
   }
 }

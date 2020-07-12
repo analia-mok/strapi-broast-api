@@ -1,0 +1,7 @@
+{
+  "printWidth": 80,
+  "singleQuote": true,
+  "indent": 2,
+  "semi": true,
+  "endOfLine": "lf"
+}

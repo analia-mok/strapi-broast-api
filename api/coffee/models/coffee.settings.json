@@ -40,6 +40,14 @@
     "bag_weight": {
       "type": "integer",
       "required": true
+    },
+    "roaster": {
+      "via": "coffees",
+      "model": "roaster"
+    },
+    "flavor_profile": {
+      "via": "coffees",
+      "model": "flavor-profile"
     }
   }
 }
