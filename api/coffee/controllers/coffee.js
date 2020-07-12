@@ -34,11 +34,11 @@ module.exports = {
       if (coffee.flavor_profile) {
         const flavor_profile = {};
         if (coffee.flavor_profile.name) {
-          flavor_profile['name'] = coffee.flavor_profile.name;
+          flavor_profile.name = coffee.flavor_profile.name;
         }
 
         if (coffee.flavor_profile.brief_description) {
-          flavor_profile['brief_description'] =
+          flavor_profile.brief_description =
             coffee.flavor_profile.brief_description;
         }
 
