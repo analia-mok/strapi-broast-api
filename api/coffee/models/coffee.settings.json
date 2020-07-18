@@ -46,8 +46,11 @@
       "model": "roaster"
     },
     "flavor_profile": {
-      "via": "coffees",
-      "model": "flavor-profile"
+      "model": "flavor-profile",
+      "via": "coffees"
+    },
+    "source_link": {
+      "type": "string"
     }
   }
 }

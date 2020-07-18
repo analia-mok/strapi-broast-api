@@ -32,6 +32,9 @@
     "coffees": {
       "collection": "coffee",
       "via": "roaster"
+    },
+    "source_link": {
+      "type": "string"
     }
   }
 }
