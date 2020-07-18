@@ -112,3 +112,6 @@ coverage
 exports
 .cache
 build
+
+# Need to un-version for heroku.
+yarn.lock
