@@ -47,6 +47,42 @@ module.exports = {
         coffee.flavor_profile = flavor_profile;
       }
 
+      if (coffee.roaster.logo) {
+        let logo = coffee.roaster.logo;
+        console.log(process.env);
+        const baseUrl =
+          process.env.NODE_ENV === 'development' ? 'http://localhost:1337' : '';
+
+        let cleanedLogo = {
+          alt: logo.alternativeText,
+          formats: {
+            large: {
+              url: logo.formats.large.url
+                ? baseUrl + logo.formats.large.url
+                : '',
+            },
+            medium: {
+              url: logo.formats.medium.url
+                ? baseUrl + logo.formats.medium.url
+                : '',
+            },
+            small: {
+              url: logo.formats.small.url
+                ? baseUrl + logo.formats.small.url
+                : '',
+            },
+            thumbnail: {
+              url: logo.formats.thumbnail.url
+                ? baseUrl + logo.formats.thumbnail.url
+                : '',
+            },
+          },
+        };
+
+        delete coffee.roaster.logo;
+        coffee.roaster.logo = cleanedLogo;
+      }
+
       return coffee;
     });
   },
