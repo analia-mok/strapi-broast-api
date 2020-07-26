@@ -30,8 +30,8 @@
       "required": true
     },
     "coffees": {
-      "collection": "coffee",
-      "via": "roaster"
+      "via": "roaster",
+      "collection": "coffee"
     },
     "source_link": {
       "type": "string"
