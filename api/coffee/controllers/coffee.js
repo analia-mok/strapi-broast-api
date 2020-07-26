@@ -94,4 +94,22 @@ module.exports = {
       return coffee;
     });
   },
+
+  /**
+   * Retrieve records by slug.
+   * @param {Array} ctx
+   */
+  async findOne(ctx) {
+    const { id } = ctx.params;
+    let entity;
+
+    if (isNaN(parseInt(id))) {
+      // search by slug
+      entity = await strapi.services.coffee.findOne({ slug: id });
+    } else {
+      entity = await strapi.services.coffee.findOne({ id });
+    }
+
+    return sanitizeEntity(entity, { model: strapi.models.coffee });
+  },
 };

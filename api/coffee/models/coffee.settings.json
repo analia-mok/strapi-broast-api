@@ -42,8 +42,8 @@
       "required": true
     },
     "roaster": {
-      "via": "coffees",
-      "model": "roaster"
+      "model": "roaster",
+      "via": "coffees"
     },
     "flavor_profile": {
       "model": "flavor-profile",
@@ -52,7 +52,7 @@
     "source_link": {
       "type": "string"
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
       "targetField": "name"
     }
