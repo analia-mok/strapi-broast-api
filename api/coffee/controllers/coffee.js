@@ -83,6 +83,14 @@ module.exports = {
         coffee.roaster.logo = cleanedLogo;
       }
 
+      // Format price to 2 decimal places
+      if (coffee.price) {
+        let formattedPrice = parseFloat(coffee.price).toFixed(2);
+
+        delete coffee.price;
+        coffee.price = formattedPrice;
+      }
+
       return coffee;
     });
   },
